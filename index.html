@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnerLoop Studio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="InnerLoop Studio">
+  <meta property="og:description" content="Something is coming.">
+  <meta property="og:image" content="https://innerloop.studio/assets/images/og-image.svg">
+  <meta property="og:url" content="https://innerloop.studio">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="InnerLoop Studio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InnerLoop Studio">
+  <meta name="twitter:description" content="Something is coming.">
+  <meta name="twitter:image" content="https://innerloop.studio/assets/images/og-image.svg">
+
+  <!-- General meta -->
+  <meta name="description" content="Something is coming.">
+  <meta name="theme-color" content="#f4efe8">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- Logo (inline SVG for pulse animation on inner circle) -->
+    <div class="logo" aria-label="InnerLoop Studio">
+      <svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="g3" cx="40%" cy="35%" r="60%">
+            <stop offset="0%" stop-color="#ffd8c0" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#b85a30" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="38" cy="38" r="35" stroke="#ddd0c0" stroke-width="1.5" fill="none"/>
+        <circle cx="38" cy="38" r="23" stroke="#b85a30" stroke-width="2" fill="none"/>
+        <g class="icon-pulse">
+          <circle cx="38" cy="38" r="10" fill="#b85a30"/>
+          <circle cx="38" cy="38" r="10" fill="url(#g3)"/>
+        </g>
+        <text x="88" y="34" font-family="Fraunces, serif" font-weight="400" font-size="20" fill="#2a2018" letter-spacing="-0.5">
+          <tspan font-weight="600">I</tspan>nner<tspan font-weight="600">L</tspan>oop
+        </text>
+        <text x="89" y="54" font-family="DM Sans, sans-serif" font-weight="300" font-size="11" fill="#b85a30" letter-spacing="4">STUDIO</text>
+      </svg>
+    </div>
+
+    <!-- Tagline -->
+    <p class="tagline">Something is coming.</p>
+
+    <!-- Subcopy -->
+    <p class="subcopy">Built for the people who matter most.</p>
+
+    <!-- Email form -->
+    <div class="form-section">
+      <form id="waitlist-form" class="form-wrap" autocomplete="off">
+        <input
+          id="email-input"
+          type="email"
+          placeholder="your@email.com"
+          required
+          aria-label="Email address"
+        >
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="form-hint">No spam. Ever.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; InnerLoop Studio</footer>
+
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
