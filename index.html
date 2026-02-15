@@ -61,10 +61,10 @@
     </div>
 
     <!-- Tagline -->
-    <p class="tagline">Something is coming.</p>
+    <p class="tagline" data-i18n="tagline">Something is coming.</p>
 
     <!-- Subcopy -->
-    <p class="subcopy">Built for the people who matter most.</p>
+    <p class="subcopy" data-i18n="subcopy">Built for the people who matter most.</p>
 
     <!-- Email form -->
     <div class="form-section">
@@ -75,10 +75,11 @@
           placeholder="your@email.com"
           required
           aria-label="Email address"
+          data-i18n-aria="emailAria"
         >
-        <button type="submit">Notify me</button>
+        <button type="submit" data-i18n="notify">Notify me</button>
       </form>
-      <p class="form-hint">No spam. Ever.</p>
+      <p class="form-hint" data-i18n="hint">No spam. Ever.</p>
     </div>
 
     <!-- Footer -->
@@ -89,6 +90,7 @@
 
   </main>
 
+  <script type="module" src="assets/js/i18n.js"></script>
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

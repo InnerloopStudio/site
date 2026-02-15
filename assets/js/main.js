@@ -1,4 +1,5 @@
 import { submitEmail } from "./firebase.js";
+import { t } from "./i18n.js";
 
 const form = document.getElementById("waitlist-form");
 const formSection = document.querySelector(".form-section");
@@ -19,14 +20,14 @@ form.addEventListener("submit", async (e) => {
 
   try {
     await submitEmail(email);
-    formSection.innerHTML = '<div class="success-message">You\'re on the list.</div>';
+    formSection.innerHTML = `<div class="success-message">${t("success")}</div>`;
   } catch (err) {
     button.disabled = false;
-    button.textContent = "Notify me";
+    button.textContent = t("notify");
 
     const errorEl = document.createElement("div");
     errorEl.className = "error-message";
-    errorEl.textContent = "Try again.";
+    errorEl.textContent = t("error");
     formSection.appendChild(errorEl);
   }
 });
