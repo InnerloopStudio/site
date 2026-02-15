@@ -189,6 +189,10 @@ body {
 
 /* Footer */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   font-family: 'DM Sans', sans-serif;
   font-size: 10px;
   color: var(--color-text-muted);
@@ -196,6 +200,16 @@ footer {
   opacity: 0;
   animation: fadeIn 800ms ease forwards;
   animation-delay: 800ms;
+}
+
+footer a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+footer a:hover {
+  color: var(--color-accent);
 }
 
 /* Fade in animation */
