@@ -7,6 +7,7 @@ const translations = {
     success: "You're on the list.",
     error: "Try again.",
     emailAria: "Email address",
+    emailPlaceholder: "your@email.com",
   },
   "pt-BR": {
     tagline: "Algo está chegando.",
@@ -16,6 +17,7 @@ const translations = {
     success: "Você está na lista.",
     error: "Tente novamente.",
     emailAria: "Endereço de e-mail",
+    emailPlaceholder: "seu@email.com",
   },
   es: {
     tagline: "Algo se acerca.",
@@ -25,6 +27,7 @@ const translations = {
     success: "Estás en la lista.",
     error: "Inténtalo de nuevo.",
     emailAria: "Correo electrónico",
+    emailPlaceholder: "tu@email.com",
   },
   de: {
     tagline: "Etwas kommt.",
@@ -34,6 +37,7 @@ const translations = {
     success: "Du bist auf der Liste.",
     error: "Erneut versuchen.",
     emailAria: "E-Mail-Adresse",
+    emailPlaceholder: "deine@email.com",
   },
 };
 
